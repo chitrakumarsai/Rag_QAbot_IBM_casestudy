@@ -28,10 +28,10 @@ def get_llm(model_id):
     
     credentials = {
         "url": "https://us-south.ml.cloud.ibm.com",
-        "api_key": os.environ.get("WATSONX_APIKEY")
+        "api_key": os.environ.get("WATSONX_APIKEY") #Not a real API key
     }
     
-    project_id = "43b21fd6-5e20-4bf1-ad35-1c734262eee3"
+    project_id = "43b21fd6-5e20-4bf1-ad35-1c734262eee3" #Not a real id
     
     model = ModelInference(
         model_id=model_id,
