@@ -4,7 +4,7 @@ from ibm_watsonx_ai import Credentials
 # Replace with your actual credentials
 credentials = Credentials(
     url="https://us-south.ml.cloud.ibm.com",
-    api_key="t1-SzhGhpPjAFnKtm3nTsrzuIei0T_ivsSMNacoik1ni"
+    api_key="t1-SzhGhpPjAFnKtm3nTsrzuIei0T_ivsSMNacoik1ni" #Not a real API key
 )
 
 client = APIClient(credentials)
@@ -13,6 +13,7 @@ client = APIClient(credentials)
 try:
     print("Fetching available foundation models...")
     models = client.foundation_models.GE
+
     
     print("\nAvailable models:")
     for model in models:
